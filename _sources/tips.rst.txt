@@ -45,7 +45,7 @@ To make anything relating to the brain's GUI (Graphical User Interface) easy to 
 
 An example usage of the AutonSelector can be seen below:
 
-.. image:: ../images/autonselector.png
+.. image:: /images/autonselector.png
     :alt: Auton Selector Image
 
 Use ``errno``, I beg of you 

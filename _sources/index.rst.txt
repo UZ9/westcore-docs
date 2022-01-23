@@ -38,12 +38,6 @@ Development updates:
 
 .. toctree::
    :hidden:
-   :caption: Dev Blogs
-
-   ./blog/tips
-
-.. toctree::
-   :hidden:
    :caption: WestCore
 
    ./westcore/index
