@@ -1,0 +1,8 @@
+===================
+ContinuousAsyncTask
+===================
+
+.. doxygenclass:: westcore::ContinuousAsyncTask
+    :project: westcore
+    :members:
+    :undoc-members:

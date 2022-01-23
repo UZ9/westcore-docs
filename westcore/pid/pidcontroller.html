@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIDController &mdash; westcore 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Grafana GUI" href="../gui-data/index.html" />
+    <link rel="prev" title="PID" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> westcore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">WestCore Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">WestCore</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../chassis/index.html">Chassis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/index.html">Display</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">PID</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PIDController</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../gui-data/index.html">Grafana GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">westcore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">C++ API</a> &raquo;</li>
+          <li><a href="index.html">PID</a> &raquo;</li>
+      <li>PIDController</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/westcore/pid/pidcontroller.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pidcontroller">
+<h1>PIDController<a class="headerlink" href="#pidcontroller" title="Permalink to this headline"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore13PIDControllerE">
+<span id="_CPPv3N8westcore13PIDControllerE"></span><span id="_CPPv2N8westcore13PIDControllerE"></span><span id="westcore::PIDController"></span><span class="target" id="classwestcore_1_1_p_i_d_controller"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PIDController</span></span></span><a class="headerlink" href="#_CPPv4N8westcore13PIDControllerE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore13PIDController13PIDControllerERKNSt8functionIFdvEEE8PIDGains">
+<span id="_CPPv3N8westcore13PIDController13PIDControllerERKNSt8functionIFdvEEE8PIDGains"></span><span id="_CPPv2N8westcore13PIDController13PIDControllerERKNSt8functionIFdvEEE8PIDGains"></span><span class="target" id="classwestcore_1_1_p_i_d_controller_1a65a59dcc3bb0496ef1bbc7ad36e55317"></span><span class="sig-name descname"><span class="n"><span class="pre">PIDController</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">currentFunction</span></span>, <span class="n"><span class="pre">PIDGains</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gains</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore13PIDController13PIDControllerERKNSt8functionIFdvEEE8PIDGains" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Initializes a new PID Controller given a current function and gains. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>currentFunction</strong> – The function the PID controller will be pulling the current value from. This might be the current encoder position of the chassis or angle of the IMU. </p></li>
+<li><p><strong>gains</strong> – The gains are the constants used in any PID Controller, along with the max windup and kLimit to prevent kI causing too much rampup. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore13PIDController9setTargetEi">
+<span id="_CPPv3N8westcore13PIDController9setTargetEi"></span><span id="_CPPv2N8westcore13PIDController9setTargetEi"></span><span id="westcore::PIDController::setTarget__i"></span><span class="target" id="classwestcore_1_1_p_i_d_controller_1a92c00791f7a98e8ee2f499b894715c31"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setTarget</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore13PIDController9setTargetEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Begins a new pros::task that calculates an output variable from a given current function and target. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>_target</strong> – The target value to reach </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8westcore13PIDController9getTargetEv">
+<span id="_CPPv3NK8westcore13PIDController9getTargetEv"></span><span id="_CPPv2NK8westcore13PIDController9getTargetEv"></span><span id="westcore::PIDController::getTargetC"></span><span class="target" id="classwestcore_1_1_p_i_d_controller_1a4a1e711d0a07ac0c1c72547fee7c18c8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTarget</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8westcore13PIDController9getTargetEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current target value the PID Controller is attempting to reach </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore13PIDController9getOutputEv">
+<span id="_CPPv3N8westcore13PIDController9getOutputEv"></span><span id="_CPPv2N8westcore13PIDController9getOutputEv"></span><span id="westcore::PIDController::getOutput"></span><span class="target" id="classwestcore_1_1_p_i_d_controller_1aac0ae57c5b60706ba57e67ee25183fac"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOutput</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore13PIDController9getOutputEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current output value the PID Controller has calculated. This usually is a voltage for motors to move at. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8westcore13PIDController8getErrorEv">
+<span id="_CPPv3NK8westcore13PIDController8getErrorEv"></span><span id="_CPPv2NK8westcore13PIDController8getErrorEv"></span><span id="westcore::PIDController::getErrorC"></span><span class="target" id="classwestcore_1_1_p_i_d_controller_1a595b74dc006774e7672141997117fb65"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8westcore13PIDController8getErrorEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current output value the PID Controller has calculated. This usually is a voltage for motors to move at. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore13PIDController7settledE">
+<span id="_CPPv3N8westcore13PIDController7settledE"></span><span id="_CPPv2N8westcore13PIDController7settledE"></span><span id="westcore::PIDController::settled__b"></span><span class="target" id="classwestcore_1_1_p_i_d_controller_1a640a209708685747c34060078fd822eb"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">settled</span></span></span><a class="headerlink" href="#_CPPv4N8westcore13PIDController7settledE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Used for marking when the task has reached a valid error threshold to shut off. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="PID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../gui-data/index.html" class="btn btn-neutral float-right" title="Grafana GUI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryder Johnson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+============
+Variable
+============
+
+.. doxygenclass:: westcore::Variable
+    :project: westcore
+    :members:
+    :undoc-members:

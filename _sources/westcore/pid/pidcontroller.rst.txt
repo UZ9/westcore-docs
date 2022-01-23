@@ -1,0 +1,8 @@
+=================
+PIDController
+=================
+
+.. doxygenclass:: westcore::PIDController
+    :project: westcore
+    :members:
+    :undoc-members:

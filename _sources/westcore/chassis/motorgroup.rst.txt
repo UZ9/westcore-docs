@@ -1,0 +1,8 @@
+=================
+MotorGroup 
+=================
+
+.. doxygenclass:: westcore::MotorGroup
+    :project: westcore
+    :members:
+    :undoc-members:

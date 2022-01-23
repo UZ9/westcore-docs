@@ -1,0 +1,8 @@
+=================
+AutonSelector
+=================
+
+.. doxygenclass:: westcore::AutonSelector 
+    :project: westcore
+    :members:
+    :undoc-members:

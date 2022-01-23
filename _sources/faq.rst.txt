@@ -1,0 +1,42 @@
+======
+FAQ
+======
+
+I'm on Linux and anytime I try to upload to the brain it says ``could not open port /dev/tty/ACM0``.
+--------------------------------------------------------------------------------------------------------------------
+
+You'll need to add your user to the dialout system group.
+
+I keep getting a Data Abort Exception, but the error message is too vague for me to understand what is wrong.
+--------------------------------------------------------------------------------------------------------------------
+
+If you happen to get a red box on the brain's screen with the label ``Data Abort Exception``, you'll likely need to view the stacktrace to properly decipher what went wrong.
+
+First, you'll need to connect the robot and start up the PROS terminal with the following command:
+``pros terminal``
+Once the termina has been loaded, start the program again. A large string of red characters should now appear in your PROS terminal. All we're worried about is this bit of text:
+
+
+.. code-block:: shell
+
+   BEGIN STACK TRACE
+   0x0000000
+   0x0000000
+   END OF STACK TRACE
+
+
+The list of numbers represents the memory addresses the program followed that resulted in the error. Go ahead and copy the addresses for the following command. 
+
+We can convert these addresses to line numbers in our code by using the ``arm-none-eabi-addr2line`` utility provided by the PROS toolchain. Execute this command in the root of your project:
+
+.. code-block:: shell
+
+   arm-none-eabi-addr2line -faps -e ./bin/hot.package.elf
+
+
+While the program is running, paste the values. This should end up printing the exact file name and line number where the exception occurred. 
+
+
+.. note::
+   You might have to change ``hot.package.elf`` to ``cold.package.elf`` if you only see a bunch of question marks.
+

@@ -1,0 +1,8 @@
+#################
+ControllerDisplay
+#################
+
+.. doxygenclass:: westcore::ControllerDisplay
+    :project: westcore
+    :members:
+    :undoc-members:

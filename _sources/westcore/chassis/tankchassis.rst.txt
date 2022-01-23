@@ -1,0 +1,8 @@
+#################
+TankChassis
+#################
+
+.. doxygenclass:: westcore::TankChassis
+    :project: westcore
+    :members:
+    :undoc-members:

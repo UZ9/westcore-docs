@@ -1,0 +1,8 @@
+#########################
+ControllerConfiguration
+#########################
+
+.. doxygenclass:: westcore::ControllerConfiguration
+    :project: westcore
+    :members:
+    :undoc-members:

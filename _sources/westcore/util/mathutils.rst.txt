@@ -1,0 +1,6 @@
+=================
+MathUtilities 
+=================
+
+.. doxygenfile:: mathutils.h
+    :project: westcore

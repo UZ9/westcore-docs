@@ -1,0 +1,8 @@
+=================
+ControllerMenu
+=================
+
+.. doxygenclass:: westcore::ControllerMenu 
+    :project: westcore
+    :members:
+    :undoc-members:

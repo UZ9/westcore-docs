@@ -1,0 +1,8 @@
+============
+GUIManager
+============
+
+.. doxygenclass:: westcore::GUIManager
+    :project: westcore
+    :members:
+    :undoc-members:

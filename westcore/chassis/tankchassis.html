@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TankChassis &mdash; westcore 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Display" href="../display/index.html" />
+    <link rel="prev" title="MotorGroup" href="motorgroup.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> westcore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">WestCore Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">WestCore</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">C++ API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Chassis</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="controller/controllerconfiguration.html">ControllerConfiguration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="motorgroup.html">MotorGroup</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">TankChassis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../display/index.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pid/index.html">PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui-data/index.html">Grafana GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">westcore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">C++ API</a> &raquo;</li>
+          <li><a href="index.html">Chassis</a> &raquo;</li>
+      <li>TankChassis</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/westcore/chassis/tankchassis.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tankchassis">
+<h1>TankChassis<a class="headerlink" href="#tankchassis" title="Permalink to this headline"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassisE">
+<span id="_CPPv3N8westcore11TankChassisE"></span><span id="_CPPv2N8westcore11TankChassisE"></span><span id="westcore::TankChassis"></span><span class="target" id="classwestcore_1_1_tank_chassis"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">TankChassis</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">okapi</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SkidSteerModel</span></span><a class="headerlink" href="#_CPPv4N8westcore11TankChassisE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis11TankChassisERKN8westcore10MotorGroupERKN8westcore10MotorGroupERK23ControllerConfiguration">
+<span id="_CPPv3N8westcore11TankChassis11TankChassisERKN8westcore10MotorGroupERKN8westcore10MotorGroupERK23ControllerConfiguration"></span><span id="_CPPv2N8westcore11TankChassis11TankChassisERKN8westcore10MotorGroupERKN8westcore10MotorGroupERK23ControllerConfiguration"></span><span id="westcore::TankChassis::TankChassis__westcore::MotorGroupCR.westcore::MotorGroupCR.ControllerConfigurationCR"></span><span class="target" id="classwestcore_1_1_tank_chassis_1ada28306c0e75c0e2e191ed661ea9f772"></span><span class="sig-name descname"><span class="n"><span class="pre">TankChassis</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="motorgroup.html#_CPPv4N8westcore10MotorGroupE" title="westcore::MotorGroup"><span class="n"><span class="pre">MotorGroup</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ileftSideMotor</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="motorgroup.html#_CPPv4N8westcore10MotorGroupE" title="westcore::MotorGroup"><span class="n"><span class="pre">MotorGroup</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">irightSideMotor</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="controller/controllerconfiguration.html#_CPPv4N8westcore23ControllerConfigurationE" title="westcore::ControllerConfiguration"><span class="n"><span class="pre">ControllerConfiguration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">iconfiguration</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis11TankChassisERKN8westcore10MotorGroupERKN8westcore10MotorGroupERK23ControllerConfiguration" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new chassis from a given configuration </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ileftSideMotor</strong> – All motors on the left side of the robot </p></li>
+<li><p><strong>irightSideMotor</strong> – All motors on the right side of the robot </p></li>
+<li><p><strong>configuration</strong> – The controller configuration, used for determining user control operations </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis26setControllerConfigurationERK23ControllerConfiguration">
+<span id="_CPPv3N8westcore11TankChassis26setControllerConfigurationERK23ControllerConfiguration"></span><span id="_CPPv2N8westcore11TankChassis26setControllerConfigurationERK23ControllerConfiguration"></span><span id="westcore::TankChassis::setControllerConfiguration__ControllerConfigurationCR"></span><span class="target" id="classwestcore_1_1_tank_chassis_1a41a32af223d0425858acea364fc6d741"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setControllerConfiguration</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="controller/controllerconfiguration.html#_CPPv4N8westcore23ControllerConfigurationE" title="westcore::ControllerConfiguration"><span class="n"><span class="pre">ControllerConfiguration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">iconfiguration</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis26setControllerConfigurationERK23ControllerConfiguration" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates the <a class="reference internal" href="controller/controllerconfiguration.html#classwestcore_1_1_controller_configuration"><span class="std std-ref">ControllerConfiguration</span></a> with a new preset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>controllerConfiguration</strong> – The new <a class="reference internal" href="controller/controllerconfiguration.html#classwestcore_1_1_controller_configuration"><span class="std std-ref">ControllerConfiguration</span></a> to switch to </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis17enableGuiTrackingEv">
+<span id="_CPPv3N8westcore11TankChassis17enableGuiTrackingEv"></span><span id="_CPPv2N8westcore11TankChassis17enableGuiTrackingEv"></span><span id="westcore::TankChassis::enableGuiTracking"></span><span class="target" id="classwestcore_1_1_tank_chassis_1a0876190bfb49dd4cde73824388738847"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableGuiTracking</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis17enableGuiTrackingEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Begins tracking all chassis statistics and sending them through the PROS CLI. Only useful when using the WestCore <a class="reference internal" href="../display/wrapper/gui.html#classwestcore_1_1_g_u_i"><span class="std std-ref">GUI</span></a> system. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis9getOutputERK13JoystickValueRK13JoystickValue">
+<span id="_CPPv3N8westcore11TankChassis9getOutputERK13JoystickValueRK13JoystickValue"></span><span id="_CPPv2N8westcore11TankChassis9getOutputERK13JoystickValueRK13JoystickValue"></span><span id="westcore::TankChassis::getOutput__JoystickValueCR.JoystickValueCR"></span><span class="target" id="classwestcore_1_1_tank_chassis_1af79c7f88ce88a3375219dbba92d754ed"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">tuple</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOutput</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8westcore11TankChassis13JoystickValueE" title="westcore::TankChassis::JoystickValue"><span class="n"><span class="pre">JoystickValue</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">left</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8westcore11TankChassis13JoystickValueE" title="westcore::TankChassis::JoystickValue"><span class="n"><span class="pre">JoystickValue</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">right</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis9getOutputERK13JoystickValueRK13JoystickValue" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the left and right motor powers for the chassis given joystick values. The output will differ depending on the ChassisConfiguration.</p>
+<p>This method will only return the simulated power output and has no effect on the chassis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>left</strong> – The current <a class="reference internal" href="#structwestcore_1_1_tank_chassis_1_1_joystick_value"><span class="std std-ref">JoystickValue</span></a> for the left joystick </p></li>
+<li><p><strong>right</strong> – The current <a class="reference internal" href="#structwestcore_1_1_tank_chassis_1_1_joystick_value"><span class="std std-ref">JoystickValue</span></a> for the right joystick </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis6updateERK13JoystickValueRK13JoystickValue">
+<span id="_CPPv3N8westcore11TankChassis6updateERK13JoystickValueRK13JoystickValue"></span><span id="_CPPv2N8westcore11TankChassis6updateERK13JoystickValueRK13JoystickValue"></span><span id="westcore::TankChassis::update__JoystickValueCR.JoystickValueCR"></span><span class="target" id="classwestcore_1_1_tank_chassis_1a86b15460d05ccfd6c52eb0cb52564841"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8westcore11TankChassis13JoystickValueE" title="westcore::TankChassis::JoystickValue"><span class="n"><span class="pre">JoystickValue</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">left</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8westcore11TankChassis13JoystickValueE" title="westcore::TankChassis::JoystickValue"><span class="n"><span class="pre">JoystickValue</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">right</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis6updateERK13JoystickValueRK13JoystickValue" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates and applies motor power to the chassis given joystick value inputs. This should be called in the user control while loop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>left</strong> – The current <a class="reference internal" href="#structwestcore_1_1_tank_chassis_1_1_joystick_value"><span class="std std-ref">JoystickValue</span></a> for the left joystick </p></li>
+<li><p><strong>right</strong> – The current <a class="reference internal" href="#structwestcore_1_1_tank_chassis_1_1_joystick_value"><span class="std std-ref">JoystickValue</span></a> for the right joystick </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis13JoystickValueE">
+<span id="_CPPv3N8westcore11TankChassis13JoystickValueE"></span><span id="_CPPv2N8westcore11TankChassis13JoystickValueE"></span><span id="westcore::TankChassis::JoystickValue"></span><span class="target" id="structwestcore_1_1_tank_chassis_1_1_joystick_value"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">JoystickValue</span></span></span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis13JoystickValueE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Represents the current x and y values of a joystick, ranging from [-1, 1] in okapi, or [-127, 127] in PROS. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis13JoystickValue1xE">
+<span id="_CPPv3N8westcore11TankChassis13JoystickValue1xE"></span><span id="_CPPv2N8westcore11TankChassis13JoystickValue1xE"></span><span id="westcore::TankChassis::JoystickValue::x__float"></span><span class="target" id="structwestcore_1_1_tank_chassis_1_1_joystick_value_1ad50ae9dab9f03ca0b90d65dce9d9ce3e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis13JoystickValue1xE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore11TankChassis13JoystickValue1yE">
+<span id="_CPPv3N8westcore11TankChassis13JoystickValue1yE"></span><span id="_CPPv2N8westcore11TankChassis13JoystickValue1yE"></span><span id="westcore::TankChassis::JoystickValue::y__float"></span><span class="target" id="structwestcore_1_1_tank_chassis_1_1_joystick_value_1aa2d572a6d29237e5628f0b6fed2b6af6"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><a class="headerlink" href="#_CPPv4N8westcore11TankChassis13JoystickValue1yE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="motorgroup.html" class="btn btn-neutral float-left" title="MotorGroup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../display/index.html" class="btn btn-neutral float-right" title="Display" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryder Johnson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

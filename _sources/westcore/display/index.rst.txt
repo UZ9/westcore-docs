@@ -1,0 +1,12 @@
+========
+Display
+========
+
+.. toctree ::
+    :glob:
+    :titlesonly:
+    :caption: Display
+
+    menu/*
+    wrapper/*
+    *

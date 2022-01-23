@@ -1,0 +1,53 @@
+=========
+C++ API
+=========
+
+WestCore is a library built by Gold Dusk (33691A) and seeks to create a foundational boilerplate codebase.
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: Chassis
+    :titlesonly:
+
+    ./chassis/index
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: Display
+    :titlesonly:
+
+    ./display/index 
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: PID 
+    :titlesonly:
+
+    ./pid/index
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: Grafana GUI 
+    :titlesonly:
+
+    ./gui-data/index
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: Motion 
+    :titlesonly:
+
+    ./model/index
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: Utilities 
+    :titlesonly:
+
+    ./util/index

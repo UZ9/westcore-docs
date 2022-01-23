@@ -1,0 +1,8 @@
+=================
+StateMachine 
+=================
+
+.. doxygenclass:: westcore::StateMachine
+    :project: westcore
+    :members:
+    :undoc-members:

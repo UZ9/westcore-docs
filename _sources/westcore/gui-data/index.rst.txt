@@ -1,0 +1,11 @@
+============
+Grafana GUI 
+============
+
+.. toctree ::
+    :glob:
+    :titlesonly:
+    :caption: Grafana GUI
+
+    variables/*
+    *

@@ -1,0 +1,22 @@
+=======================
+WestCore Documentation
+=======================
+
+.. toctree::
+   :caption: Home
+
+   self
+
+.. toctree::
+   :hidden:
+   :caption: FAQ
+
+   faq
+
+.. toctree::
+   :hidden:
+   :caption: WestCore
+
+   ./westcore/index
+
+

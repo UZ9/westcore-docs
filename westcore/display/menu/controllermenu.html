@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ControllerMenu &mdash; westcore 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="GUI" href="../wrapper/gui.html" />
+    <link rel="prev" title="Display" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> westcore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">WestCore Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">WestCore</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../chassis/index.html">Chassis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Display</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ControllerMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wrapper/gui.html">GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonselector.html">AutonSelector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../controllerdisplay.html">ControllerDisplay</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../pid/index.html">PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui-data/index.html">Grafana GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../util/index.html">Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">westcore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">C++ API</a> &raquo;</li>
+          <li><a href="../index.html">Display</a> &raquo;</li>
+      <li>ControllerMenu</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/westcore/display/menu/controllermenu.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="controllermenu">
+<h1>ControllerMenu<a class="headerlink" href="#controllermenu" title="Permalink to this headline"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenuE">
+<span id="_CPPv3N8westcore14ControllerMenuE"></span><span id="_CPPv2N8westcore14ControllerMenuE"></span><span id="westcore::ControllerMenu"></span><span class="target" id="classwestcore_1_1_controller_menu"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ControllerMenu</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../../util/continuousasynctask.html#_CPPv4N8westcore19ContinuousAsyncTaskE" title="westcore::ContinuousAsyncTask"><span class="n"><span class="pre">ContinuousAsyncTask</span></span></a><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenuE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu14ControllerMenuERKN14ControllerMenu7BuilderE">
+<span id="_CPPv3N8westcore14ControllerMenu14ControllerMenuERKN14ControllerMenu7BuilderE"></span><span id="_CPPv2N8westcore14ControllerMenu14ControllerMenuERKN14ControllerMenu7BuilderE"></span><span id="westcore::ControllerMenu::ControllerMenu__ControllerMenu::BuilderCR"></span><span class="target" id="classwestcore_1_1_controller_menu_1a32c7b25de0a295073a5848a081704340"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ControllerMenu</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8westcore14ControllerMenu14ControllerMenuERKN14ControllerMenu7BuilderE" title="westcore::ControllerMenu::ControllerMenu"><span class="n"><span class="pre">ControllerMenu</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Builder</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">builder</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu14ControllerMenuERKN14ControllerMenu7BuilderE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu9addChoiceERK20ControllerMenuChoice">
+<span id="_CPPv3N8westcore14ControllerMenu9addChoiceERK20ControllerMenuChoice"></span><span id="_CPPv2N8westcore14ControllerMenu9addChoiceERK20ControllerMenuChoice"></span><span id="westcore::ControllerMenu::addChoice__ControllerMenuChoiceCR"></span><span class="target" id="classwestcore_1_1_controller_menu_1aacec57b20583c1b6b6670fb10f2e4534"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addChoice</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ControllerMenuChoice</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">choice</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu9addChoiceERK20ControllerMenuChoice" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu6updateEv">
+<span id="_CPPv3N8westcore14ControllerMenu6updateEv"></span><span id="_CPPv2N8westcore14ControllerMenu6updateEv"></span><span id="westcore::ControllerMenu::update"></span><span class="target" id="classwestcore_1_1_controller_menu_1ad94b1650a96ff15fd74ecc74f404b8a0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu6updateEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Represents the logic that is called continuously </p>
+</dd></dl>
+
+</div>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7BuilderE">
+<span id="_CPPv3N8westcore14ControllerMenu7BuilderE"></span><span id="_CPPv2N8westcore14ControllerMenu7BuilderE"></span><span id="westcore::ControllerMenu::Builder"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Builder</span></span></span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7BuilderE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7Builder7BuilderENSt10shared_ptrI17ControllerDisplayEE">
+<span id="_CPPv3N8westcore14ControllerMenu7Builder7BuilderENSt10shared_ptrI17ControllerDisplayEE"></span><span id="_CPPv2N8westcore14ControllerMenu7Builder7BuilderENSt10shared_ptrI17ControllerDisplayEE"></span><span id="westcore::ControllerMenu::Builder::Builder__std::shared_ptr:ControllerDisplay:"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder_1adb92ff7f3ad7126cd18889f139d8091c"></span><span class="sig-name descname"><span class="n"><span class="pre">Builder</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../controllerdisplay.html#_CPPv4N8westcore17ControllerDisplayE" title="westcore::ControllerDisplay"><span class="n"><span class="pre">ControllerDisplay</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">display</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7Builder7BuilderENSt10shared_ptrI17ControllerDisplayEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7Builder10withChoiceERK20ControllerMenuChoice">
+<span id="_CPPv3N8westcore14ControllerMenu7Builder10withChoiceERK20ControllerMenuChoice"></span><span id="_CPPv2N8westcore14ControllerMenu7Builder10withChoiceERK20ControllerMenuChoice"></span><span id="westcore::ControllerMenu::Builder::withChoice__ControllerMenuChoiceCR"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder_1a1375bd3bcff14372a7526bb395f62a7f"></span><a class="reference internal" href="#_CPPv4N8westcore14ControllerMenu7BuilderE" title="westcore::ControllerMenu::Builder"><span class="n"><span class="pre">Builder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">withChoice</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ControllerMenuChoice</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">choice</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7Builder10withChoiceERK20ControllerMenuChoice" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7Builder10withChoiceERKNSt6stringERKNSt8functionIFvvEEE">
+<span id="_CPPv3N8westcore14ControllerMenu7Builder10withChoiceERKNSt6stringERKNSt8functionIFvvEEE"></span><span id="_CPPv2N8westcore14ControllerMenu7Builder10withChoiceERKNSt6stringERKNSt8functionIFvvEEE"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder_1ae4770615332791361d58cf54424857e3"></span><a class="reference internal" href="#_CPPv4N8westcore14ControllerMenu7BuilderE" title="westcore::ControllerMenu::Builder"><span class="n"><span class="pre">Builder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">withChoice</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">action</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7Builder10withChoiceERKNSt6stringERKNSt8functionIFvvEEE" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – The name of the choice to be added </p></li>
+<li><p><strong>action</strong> – The action to take when the choice is selected </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>itself </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7Builder5buildEv">
+<span id="_CPPv3N8westcore14ControllerMenu7Builder5buildEv"></span><span id="_CPPv2N8westcore14ControllerMenu7Builder5buildEv"></span><span id="westcore::ControllerMenu::Builder::build"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder_1a24ba09a5b50f936e4bca28336cdf6b81"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N8westcore14ControllerMenuE" title="westcore::ControllerMenu"><span class="n"><span class="pre">ControllerMenu</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">build</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7Builder5buildEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7Builder7displayE">
+<span id="_CPPv3N8westcore14ControllerMenu7Builder7displayE"></span><span id="_CPPv2N8westcore14ControllerMenu7Builder7displayE"></span><span id="westcore::ControllerMenu::Builder::display__std::shared_ptr:ControllerDisplay:"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder_1ab5a85577c5668481fc4328aae91bf96b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../controllerdisplay.html#_CPPv4N8westcore17ControllerDisplayE" title="westcore::ControllerDisplay"><span class="n"><span class="pre">ControllerDisplay</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">display</span></span></span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7Builder7displayE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore14ControllerMenu7Builder7choicesE">
+<span id="_CPPv3N8westcore14ControllerMenu7Builder7choicesE"></span><span id="_CPPv2N8westcore14ControllerMenu7Builder7choicesE"></span><span id="westcore::ControllerMenu::Builder::choices__std::vector:ControllerMenuChoice:"></span><span class="target" id="classwestcore_1_1_controller_menu_1_1_builder_1a17c14e440c035ad4d57b04bb32046b5a"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">ControllerMenuChoice</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">choices</span></span></span><a class="headerlink" href="#_CPPv4N8westcore14ControllerMenu7Builder7choicesE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Display" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../wrapper/gui.html" class="btn btn-neutral float-right" title="GUI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryder Johnson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StateMachine &mdash; westcore 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> westcore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">WestCore Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">WestCore</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">C++ API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">westcore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>StateMachine</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/westcore/model/statemachine.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="statemachine">
+<h1>StateMachine<a class="headerlink" href="#statemachine" title="Permalink to this headline"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN8westcore12StateMachineE">
+<span id="_CPPv3I0EN8westcore12StateMachineE"></span><span id="_CPPv2I0EN8westcore12StateMachineE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StateMachineClass</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classwestcore_1_1_state_machine"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">StateMachine</span></span></span><a class="headerlink" href="#_CPPv4I0EN8westcore12StateMachineE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore12StateMachine11acceptStateER5State">
+<span id="_CPPv3N8westcore12StateMachine11acceptStateER5State"></span><span id="_CPPv2N8westcore12StateMachine11acceptStateER5State"></span><span id="westcore::StateMachine::acceptState__StateR"></span><span class="target" id="classwestcore_1_1_state_machine_1aebc045e0b8b955c2c5b86a196d36ad2b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acceptState</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N8westcore12StateMachine5StateE" title="westcore::StateMachine::State"><span class="n"><span class="pre">State</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore12StateMachine11acceptStateER5State" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Transitions the StateController into a new state </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> – The new state to transition to </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8westcore12StateMachine9getStatusEv">
+<span id="_CPPv3NK8westcore12StateMachine9getStatusEv"></span><span id="_CPPv2NK8westcore12StateMachine9getStatusEv"></span><span id="westcore::StateMachine::getStatusC"></span><span class="target" id="classwestcore_1_1_state_machine_1a164ce797bb8e37e647eafb10a5c1a896"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8westcore12StateMachine5StateE" title="westcore::StateMachine::State"><span class="n"><span class="pre">State</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getStatus</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8westcore12StateMachine9getStatusEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current state status of the StateController </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore12StateMachine5StateE">
+<span id="_CPPv3N8westcore12StateMachine5StateE"></span><span id="_CPPv2N8westcore12StateMachine5StateE"></span><span id="westcore::StateMachine::State"></span><span class="target" id="classwestcore_1_1_state_machine_1_1_state"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">State</span></span></span><a class="headerlink" href="#_CPPv4N8westcore12StateMachine5StateE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore12StateMachine5State5StateEP12StateMachine">
+<span id="_CPPv3N8westcore12StateMachine5State5StateEP12StateMachine"></span><span id="_CPPv2N8westcore12StateMachine5State5StateEP12StateMachine"></span><span id="westcore::StateMachine::State::State__StateMachineP"></span><span class="target" id="classwestcore_1_1_state_machine_1_1_state_1a1f7cc8ea39a2da13a5ec68738d33114d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">State</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN8westcore12StateMachineE" title="westcore::StateMachine"><span class="n"><span class="pre">StateMachine</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">machine</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore12StateMachine5State5StateEP12StateMachine" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Create a new <a class="reference internal" href="#classwestcore_1_1_state_machine_1_1_state"><span class="std std-ref">State</span></a> for a <a class="reference internal" href="#classwestcore_1_1_state_machine"><span class="std std-ref">StateMachine</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>machine</strong> – The parent state machine the <a class="reference internal" href="#classwestcore_1_1_state_machine_1_1_state"><span class="std std-ref">State</span></a> is connected to </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore12StateMachine5State6actionEv">
+<span id="_CPPv3N8westcore12StateMachine5State6actionEv"></span><span id="_CPPv2N8westcore12StateMachine5State6actionEv"></span><span id="westcore::StateMachine::State::action"></span><span class="target" id="classwestcore_1_1_state_machine_1_1_state_1a8eef47396806e996c9f06dfd2879c077"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">action</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8westcore12StateMachine5State6actionEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The action the state would perform when called upon. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore12StateMachine5State7getNameEv">
+<span id="_CPPv3N8westcore12StateMachine5State7getNameEv"></span><span id="_CPPv2N8westcore12StateMachine5State7getNameEv"></span><span id="westcore::StateMachine::State::getName"></span><span class="target" id="classwestcore_1_1_state_machine_1_1_state_1a6f804619222cc49c236604ee01538484"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getName</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N8westcore12StateMachine5State7getNameEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The unique name identifier of the <a class="reference internal" href="#classwestcore_1_1_state_machine_1_1_state"><span class="std std-ref">State</span></a>, e.g. “Lowered” </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The name of the state </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryder Johnson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

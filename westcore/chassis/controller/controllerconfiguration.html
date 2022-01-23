@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ControllerConfiguration &mdash; westcore 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="MotorGroup" href="../motorgroup.html" />
+    <link rel="prev" title="Chassis" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> westcore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">WestCore Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">WestCore</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">C++ API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Chassis</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ControllerConfiguration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../motorgroup.html">MotorGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tankchassis.html">TankChassis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../display/index.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pid/index.html">PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui-data/index.html">Grafana GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../util/index.html">Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">westcore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">C++ API</a> &raquo;</li>
+          <li><a href="../index.html">Chassis</a> &raquo;</li>
+      <li>ControllerConfiguration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/westcore/chassis/controller/controllerconfiguration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="controllerconfiguration">
+<h1>ControllerConfiguration<a class="headerlink" href="#controllerconfiguration" title="Permalink to this headline"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfigurationE">
+<span id="_CPPv3N8westcore23ControllerConfigurationE"></span><span id="_CPPv2N8westcore23ControllerConfigurationE"></span><span id="westcore::ControllerConfiguration"></span><span class="target" id="classwestcore_1_1_controller_configuration"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ControllerConfiguration</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfigurationE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Represents a controller configuration for driving the robot chassis </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12FunctionTypeE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12FunctionTypeE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12FunctionTypeE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1a3fcc225c5b17c08590206efad9e28005"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FunctionType</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12FunctionTypeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Determines the mathematical function the controller values [-127, 127] will be plugged into</p>
+<p>Default = standard linear joystick Cubic = represented by (x^3)/(127^2), allowing less power towards the center of the joystick with a large ramp up. Often used when high precision is needed while still allowing full speed </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12FunctionType7DefaultE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12FunctionType7DefaultE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12FunctionType7DefaultE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1a3fcc225c5b17c08590206efad9e28005a7a1920d61156abc05a60135aefe8bc67"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Default</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12FunctionType7DefaultE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12FunctionType5CubicE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12FunctionType5CubicE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12FunctionType5CubicE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1a3fcc225c5b17c08590206efad9e28005aec6b5414eb175379ff9efc9b3eef5814"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Cubic</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12FunctionType5CubicE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12JoystickTypeE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12JoystickTypeE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12JoystickTypeE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1addfe78c97fcb86dc06a131f52db65c1d"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">JoystickType</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickTypeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Determines the type of joystick drive (chassis only) the controller will be set to</p>
+<p>ArcadeRight = 1 joystick control on the right joystick ArcadeLeft = 1 joystick control on the left joystick Tank = 2 joystick control, with each joystick moving an individual side of the robot SplitArcade = 2 joystick control with left = turning only, righht = linear travel only </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12JoystickType11ArcadeRightE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12JoystickType11ArcadeRightE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12JoystickType11ArcadeRightE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1addfe78c97fcb86dc06a131f52db65c1dafe7596571e1b87969509e83f2d2377d2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ArcadeRight</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickType11ArcadeRightE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12JoystickType10ArcadeLeftE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12JoystickType10ArcadeLeftE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12JoystickType10ArcadeLeftE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1addfe78c97fcb86dc06a131f52db65c1dac151a0fb4e32da675463ef60dba1216c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ArcadeLeft</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickType10ArcadeLeftE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12JoystickType4TankE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12JoystickType4TankE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12JoystickType4TankE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1addfe78c97fcb86dc06a131f52db65c1dae4419464d570c4b497ba1979e790b104"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Tank</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickType4TankE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration12JoystickType11SplitArcadeE">
+<span id="_CPPv3N8westcore23ControllerConfiguration12JoystickType11SplitArcadeE"></span><span id="_CPPv2N8westcore23ControllerConfiguration12JoystickType11SplitArcadeE"></span><span class="target" id="classwestcore_1_1_controller_configuration_1addfe78c97fcb86dc06a131f52db65c1dad50e0738c7d117f0212745fd88973b2b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SplitArcade</span></span></span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickType11SplitArcadeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration23ControllerConfigurationE12FunctionType12JoystickTypei">
+<span id="_CPPv3N8westcore23ControllerConfiguration23ControllerConfigurationE12FunctionType12JoystickTypei"></span><span id="_CPPv2N8westcore23ControllerConfiguration23ControllerConfigurationE12FunctionType12JoystickTypei"></span><span id="westcore::ControllerConfiguration::ControllerConfiguration__FunctionType.JoystickType.i"></span><span class="target" id="classwestcore_1_1_controller_configuration_1ab668b20c656dd860eab812a2da26bedc"></span><span class="sig-name descname"><span class="n"><span class="pre">ControllerConfiguration</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N8westcore23ControllerConfiguration12FunctionTypeE" title="westcore::ControllerConfiguration::FunctionType"><span class="n"><span class="pre">FunctionType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">functionConf</span></span>, <a class="reference internal" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickTypeE" title="westcore::ControllerConfiguration::JoystickType"><span class="n"><span class="pre">JoystickType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">joystickConf</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">maxVoltage</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">12000</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration23ControllerConfigurationE12FunctionType12JoystickTypei" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates a new Controller Configuration that can be attached to a WestTankChassis </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>functionConf</strong> – The mathematical function used for calculating the controller values </p></li>
+<li><p><strong>joystickConf</strong> – The type of joystick drive the controller will be set to </p></li>
+<li><p><strong>maxVoltage</strong> – The absolute maximum (both negative and positive) velocity the chassis can go to </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration13getMaxVoltageEv">
+<span id="_CPPv3N8westcore23ControllerConfiguration13getMaxVoltageEv"></span><span id="_CPPv2N8westcore23ControllerConfiguration13getMaxVoltageEv"></span><span id="westcore::ControllerConfiguration::getMaxVoltage"></span><span class="target" id="classwestcore_1_1_controller_configuration_1aa05a748768ff7f709006909bd626248a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMaxVoltage</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration13getMaxVoltageEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The maximum voltage the controller will send to the chassis motors </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration15getJoystickTypeEv">
+<span id="_CPPv3N8westcore23ControllerConfiguration15getJoystickTypeEv"></span><span id="_CPPv2N8westcore23ControllerConfiguration15getJoystickTypeEv"></span><span id="westcore::ControllerConfiguration::getJoystickType"></span><span class="target" id="classwestcore_1_1_controller_configuration_1a7f88759c51d5c14e91b216bec4c7347d"></span><a class="reference internal" href="#_CPPv4N8westcore23ControllerConfiguration12JoystickTypeE" title="westcore::ControllerConfiguration::JoystickType"><span class="n"><span class="pre">JoystickType</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getJoystickType</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration15getJoystickTypeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The joystick type of the configuration </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration15getFunctionTypeEv">
+<span id="_CPPv3N8westcore23ControllerConfiguration15getFunctionTypeEv"></span><span id="_CPPv2N8westcore23ControllerConfiguration15getFunctionTypeEv"></span><span id="westcore::ControllerConfiguration::getFunctionType"></span><span class="target" id="classwestcore_1_1_controller_configuration_1af06de719ef63ee4ab16a5a02ff4b72df"></span><a class="reference internal" href="#_CPPv4N8westcore23ControllerConfiguration12FunctionTypeE" title="westcore::ControllerConfiguration::FunctionType"><span class="n"><span class="pre">FunctionType</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFunctionType</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration15getFunctionTypeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The function type of the configuration </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore23ControllerConfiguration17getFunctionOutputEf">
+<span id="_CPPv3N8westcore23ControllerConfiguration17getFunctionOutputEf"></span><span id="_CPPv2N8westcore23ControllerConfiguration17getFunctionOutputEf"></span><span id="westcore::ControllerConfiguration::getFunctionOutput__float"></span><span class="target" id="classwestcore_1_1_controller_configuration_1a17aa9af852316ad402fe9eca58c12638"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFunctionOutput</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">input</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore23ControllerConfiguration17getFunctionOutputEf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the function output using the FunctionType </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input</strong> – The controller input to be processed, ranging from [-1.0, 1.0] </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The input plugged into the currentFunc equation. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Chassis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../motorgroup.html" class="btn btn-neutral float-right" title="MotorGroup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryder Johnson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

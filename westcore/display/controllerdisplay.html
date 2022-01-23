@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ControllerDisplay &mdash; westcore 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="PID" href="../pid/index.html" />
+    <link rel="prev" title="AutonSelector" href="autonselector.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> westcore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">WestCore Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">WestCore</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../chassis/index.html">Chassis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Display</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="menu/controllermenu.html">ControllerMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrapper/gui.html">GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autonselector.html">AutonSelector</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ControllerDisplay</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pid/index.html">PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui-data/index.html">Grafana GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">westcore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">C++ API</a> &raquo;</li>
+          <li><a href="index.html">Display</a> &raquo;</li>
+      <li>ControllerDisplay</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/westcore/display/controllerdisplay.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="controllerdisplay">
+<h1>ControllerDisplay<a class="headerlink" href="#controllerdisplay" title="Permalink to this headline"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplayE">
+<span id="_CPPv3N8westcore17ControllerDisplayE"></span><span id="_CPPv2N8westcore17ControllerDisplayE"></span><span id="westcore::ControllerDisplay"></span><span class="target" id="classwestcore_1_1_controller_display"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ControllerDisplay</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../util/continuousasynctask.html#_CPPv4N8westcore19ContinuousAsyncTaskE" title="westcore::ContinuousAsyncTask"><span class="n"><span class="pre">ContinuousAsyncTask</span></span></a><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplayE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Provides several easy-to-use functions for printing to the controller </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay17ControllerDisplayEv">
+<span id="_CPPv3N8westcore17ControllerDisplay17ControllerDisplayEv"></span><span id="_CPPv2N8westcore17ControllerDisplay17ControllerDisplayEv"></span><span id="westcore::ControllerDisplay::ControllerDisplay"></span><span class="target" id="classwestcore_1_1_controller_display_1ad586cf01e1817e7f6c953f34c6da31b1"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ControllerDisplay</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay17ControllerDisplayEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates a new instance of the <a class="reference internal" href="#classwestcore_1_1_controller_display"><span class="std std-ref">ControllerDisplay</span></a> </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay5printEiRKNSt6stringE">
+<span id="_CPPv3N8westcore17ControllerDisplay5printEiRKNSt6stringE"></span><span id="_CPPv2N8westcore17ControllerDisplay5printEiRKNSt6stringE"></span><span id="westcore::ControllerDisplay::print__i.ssCR"></span><span class="target" id="classwestcore_1_1_controller_display_1a5227e72f41d0018c7bdfaf3b9b693371"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">line</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">str</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay5printEiRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints an std::string at a given line on the controller </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line</strong> – The line the string will be placed on </p></li>
+<li><p><strong>str</strong> – The string to be written to the controller </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay13printCenteredEiRKNSt6stringE">
+<span id="_CPPv3N8westcore17ControllerDisplay13printCenteredEiRKNSt6stringE"></span><span id="_CPPv2N8westcore17ControllerDisplay13printCenteredEiRKNSt6stringE"></span><span id="westcore::ControllerDisplay::printCentered__i.ssCR"></span><span class="target" id="classwestcore_1_1_controller_display_1ac58bf146cef53834dfe9d4af757c8df3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printCentered</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">line</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">str</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay13printCenteredEiRKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints an centered std::string on a line on the controller </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line</strong> – The line the string will be placed on </p></li>
+<li><p><strong>str</strong> – The string to be written to the controller </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay6rumbleERKNSt6stringE">
+<span id="_CPPv3N8westcore17ControllerDisplay6rumbleERKNSt6stringE"></span><span id="_CPPv2N8westcore17ControllerDisplay6rumbleERKNSt6stringE"></span><span id="westcore::ControllerDisplay::rumble__ssCR"></span><span class="target" id="classwestcore_1_1_controller_display_1a408f96d432d7f97082f79636338ad8bc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rumble</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pattern</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay6rumbleERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Rumbles the controller with a certain pattern.</p>
+<p>Dashes (-) represent long rumbles Periods (.) represent short rumbles Spaces ( ) represent pauses </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pattern</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay3getEi">
+<span id="_CPPv3N8westcore17ControllerDisplay3getEi"></span><span id="_CPPv2N8westcore17ControllerDisplay3getEi"></span><span id="westcore::ControllerDisplay::get__i"></span><span class="target" id="classwestcore_1_1_controller_display_1afcf7ebd6a46248a49a4c7762dc464024"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">line</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay3getEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the current string value at a given line </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>line</strong> – The line to be retrieved from </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The string value of the given line on the controller </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay6updateEv">
+<span id="_CPPv3N8westcore17ControllerDisplay6updateEv"></span><span id="_CPPv2N8westcore17ControllerDisplay6updateEv"></span><span id="westcore::ControllerDisplay::update"></span><span class="target" id="classwestcore_1_1_controller_display_1a248b5c8013e6b428d5f85108afb41079"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay6updateEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Responsible for updating all of the controller logic</p>
+<p>This should be called only with ControllerDisplay::run() </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8westcore17ControllerDisplay5clearEv">
+<span id="_CPPv3N8westcore17ControllerDisplay5clearEv"></span><span id="_CPPv2N8westcore17ControllerDisplay5clearEv"></span><span id="westcore::ControllerDisplay::clear"></span><span class="target" id="classwestcore_1_1_controller_display_1a5bf24f3a99fa59c2c405801d427547fc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore17ControllerDisplay5clearEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Clears the controller’s screen </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="autonselector.html" class="btn btn-neutral float-left" title="AutonSelector" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../pid/index.html" class="btn btn-neutral float-right" title="PID" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryder Johnson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
