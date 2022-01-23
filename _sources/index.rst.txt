@@ -2,9 +2,6 @@
 WestCore Documentation
 =======================
 
-.. meta::
-   :description: The official documentation for the WestCore project.
-
 Welcome! The WestCore Documentation project aims to provide insight on programming for a VEX V5 Robot, whether it be solutions to frequently occurring issues or an explanation to conceptual ideas for improving autonomi.  
 
 .. toctree::
