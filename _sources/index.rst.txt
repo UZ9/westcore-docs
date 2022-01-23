@@ -2,21 +2,49 @@
 WestCore Documentation
 =======================
 
+Greetings! The WestCore Documentation project aims to provide insight on programming for a VEX V5 Robot, whether it be solutions to frequently occurring issues or an explanation to conceptual ideas for improving autonomi.  
+
 .. toctree::
    :caption: Home
 
    self
 
+For frequently asked questions related to the project or about common errors with your program, see the **FAQ section**:
+
+:doc:`/faq`
+
+If you want to take a look at a few tips I've picked up along the way, you can find it here:
+
+:doc:`/tips`
+
+If you need **API documentation** on the WestCore library, you can check it out here:
+
+:doc:`/westcore/index`
+
+Development updates:
+
+.. postlist:: 5
+   :date: %B %d, %Y
+   :format: {title} on {date}
+   :list-style: disc
+   :tags: dev-update
+
 .. toctree::
    :hidden:
-   :caption: FAQ
+   :caption: Other
 
    faq
+   tips
+
+.. toctree::
+   :hidden:
+   :caption: Dev Blogs
+
+   ./blog/tips
 
 .. toctree::
    :hidden:
    :caption: WestCore
 
    ./westcore/index
-
 

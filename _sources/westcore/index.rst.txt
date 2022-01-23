@@ -2,7 +2,7 @@
 C++ API
 =========
 
-WestCore is a library built by Gold Dusk (33691A) and seeks to create a foundational boilerplate codebase.
+WestCore is a library built by Gold Dusk (33691A) and seeks to provide a foundational boilerplate codebase, eliminating any redundant programming between seasons.
 
 .. toctree ::
     :maxdepth: 3
@@ -39,10 +39,18 @@ WestCore is a library built by Gold Dusk (33691A) and seeks to create a foundati
 .. toctree ::
     :maxdepth: 3
     :glob:
-    :caption: Motion 
+    :caption: Model 
     :titlesonly:
 
     ./model/index
+
+.. toctree ::
+    :maxdepth: 3
+    :glob:
+    :caption: Motion 
+    :titlesonly:
+
+    ./motion/index
 
 .. toctree ::
     :maxdepth: 3

@@ -20,8 +20,33 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Utilities" href="../util/index.html" />
-    <link rel="prev" title="Grafana GUI" href="index.html" /> 
+    <link rel="next" title="Model" href="../model/index.html" />
+    <link rel="prev" title="VariableGroup" href="variables/variablegroup.html" />    
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,9 +79,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../display/index.html">Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pid/index.html">PID</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Grafana GUI</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="variables/variable.html">Variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="variables/variabledatahandler.html">VariableDataHandler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="variables/variablegroup.html">VariableGroup</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">GUIManager</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../model/index.html">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion/index.html">Motion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
 </ul>
 </li>
@@ -87,8 +117,7 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="guimanager">
+              <section id="guimanager">
 <h1>GUIManager<a class="headerlink" href="#guimanager" title="Permalink to this headline"></a></h1>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N8westcore10GUIManagerE">
@@ -109,7 +138,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler">
-<span id="_CPPv3N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler"></span><span id="_CPPv2N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler"></span><span id="westcore::GUIManager::registerDataHandler__VariableDataHandlerP"></span><span class="target" id="classwestcore_1_1_g_u_i_manager_1a4d42428c2d1b8df33cd6d8f740ad9792"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">registerDataHandler</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">VariableDataHandler</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dataHandler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler"></span><span id="_CPPv2N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler"></span><span id="westcore::GUIManager::registerDataHandler__VariableDataHandlerP"></span><span class="target" id="classwestcore_1_1_g_u_i_manager_1a4d42428c2d1b8df33cd6d8f740ad9792"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">registerDataHandler</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="variables/variabledatahandler.html#_CPPv4N8westcore19VariableDataHandlerE" title="westcore::VariableDataHandler"><span class="n"><span class="pre">VariableDataHandler</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dataHandler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8westcore10GUIManager19registerDataHandlerEP19VariableDataHandler" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Adds a new DataHandler to be registered into the <a class="reference internal" href="../display/wrapper/gui.html#classwestcore_1_1_g_u_i"><span class="std std-ref">GUI</span></a>. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -123,12 +152,15 @@
 
 </section>
 
+<div class="section">
+   
+</div>
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Grafana GUI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../util/index.html" class="btn btn-neutral float-right" title="Utilities" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="variables/variablegroup.html" class="btn btn-neutral float-left" title="VariableGroup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../model/index.html" class="btn btn-neutral float-right" title="Model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -20,8 +20,33 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="variabledatahandler.html" />
-    <link rel="prev" title="Grafana GUI" href="../index.html" /> 
+    <link rel="next" title="VariableDataHandler" href="variabledatahandler.html" />
+    <link rel="prev" title="Grafana GUI" href="../index.html" />    
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,9 +80,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../../pid/index.html">PID</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Grafana GUI</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="variabledatahandler.html">VariableDataHandler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="variablegroup.html">VariableGroup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../guimanager.html">GUIManager</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../model/index.html">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motion/index.html">Motion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../util/index.html">Utilities</a></li>
 </ul>
 </li>
@@ -88,13 +117,12 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <section id="variable">
+              <section id="variable">
 <h1>Variable<a class="headerlink" href="#variable" title="Permalink to this headline"></a></h1>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4I0EN8westcore8VariableE">
-<span id="_CPPv3I0EN8westcore8VariableE"></span><span id="_CPPv2I0EN8westcore8VariableE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classwestcore_1_1_variable"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Variable</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">VariableDataHandler</span></span><a class="headerlink" href="#_CPPv4I0EN8westcore8VariableE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Allows the user to track properties of an object and register them in the GUIManager <dl class="field-list simple">
+<span id="_CPPv3I0EN8westcore8VariableE"></span><span id="_CPPv2I0EN8westcore8VariableE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classwestcore_1_1_variable"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Variable</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">westcore</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="variabledatahandler.html#_CPPv4N8westcore19VariableDataHandlerE" title="westcore::VariableDataHandler"><span class="n"><span class="pre">VariableDataHandler</span></span></a><a class="headerlink" href="#_CPPv4I0EN8westcore8VariableE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Allows the user to track properties of an object and register them in the <a class="reference internal" href="../guimanager.html#classwestcore_1_1_g_u_i_manager"><span class="std std-ref">GUIManager</span></a> <dl class="field-list simple">
 <dt class="field-odd">tparam T</dt>
 <dd class="field-odd"><p>The type of object the <a class="reference internal" href="#classwestcore_1_1_variable"><span class="std std-ref">Variable</span></a> will be tracking </p>
 </dd>
@@ -140,12 +168,15 @@
 
 </section>
 
+<div class="section">
+   
+</div>
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="Grafana GUI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="variabledatahandler.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="variabledatahandler.html" class="btn btn-neutral float-right" title="VariableDataHandler" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
