@@ -23,12 +23,6 @@ If you need **API documentation** on the WestCore library, you can check it out 
 
 Development updates:
 
-.. postlist:: 5
-   :date: %B %d, %Y
-   :format: {title} on {date}
-   :list-style: disc
-   :tags: dev-update
-
 .. toctree::
    :hidden:
    :caption: Other
